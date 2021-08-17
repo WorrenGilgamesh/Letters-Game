@@ -1,0 +1,145 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.table {
+	width: 600px;
+	height: 340px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 100px auto;
+}
+
+.clearW {
+	width: 150px;
+	margin: 10px 10px;
+}
+
+.reset {
+	text-align: right;
+	padding-right: 10px;
+	margin: 15px 25px 30%;
+	color: grey;
+	bottom: 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+.clearX {
+	width: 30px;
+	background-color: rgb(216, 216, 216);
+	text-decoration: none;
+	padding: 18px 30px 25px 10px;
+	border-radius: 100%;
+	font-size: 40px;
+	line-height: 0;
+	color: white;
+	border: none;
+	font-weight: 100;
+}
+
+.wordBlock {
+	line-height: 60px;
+	margin: 15px 10px 0%;
+	border: 1px solid grey;
+	height: 60px;
+	padding-right: 30px;
+	padding-left: 10px;
+	width: 200px;
+	display: flex;
+	flex-direction: row;
+}
+
+.word {
+	width: 200px;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	text-align: left;
+}
+
+.wordValidation {
+	text-align: right;
+	font-size: 15px;
+	letter-spacing: 2px;
+	margin-right: 10px;
+}
+
+.board {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20%;
+	grid-template-rows: 25% 25% 25% 25%;
+}
+
+.piece {
+	font-weight: 900;
+	text-align: center;
+	line-height: 60px;
+	font-size: 40px;
+	width: 60px;
+	height: 60px;
+	margin: 10px;
+	padding: 0px;
+	border-radius: 10%;
+	background: linear-gradient(rgb(250, 209, 92), rgb(247, 113, 32));
+	color: white;
+	border: 2px solid rgb(196, 28, 28);
+	text-shadow: -1px 1px 2px black;
+}
+
+.selected {
+	background: linear-gradient(rgb(169, 228, 76), rgb(73, 153, 36));
+}
+
+.invalidSelected {
+	background: linear-gradient(rgb(240, 77, 92), rgb(164, 8, 31));
+}
+
+.valid {
+	color: green;
+}
+
+.invalid {
+	color: red;
+}
+
+@media (max-width: 640px) {
+	/*mobile*/
+	.table {
+		width: 300px;
+		height: 650px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin: 30px auto;
+	}
+
+	.reset {
+		order: 0;
+		padding-right: 10px;
+		text-align: right;
+		margin: 15px 45px 30%;
+	}
+	.clearW {
+		width: 180px;
+	}
+
+	.board {
+		order: 1;
+	}
+	.wordBlock {
+		order: 2;
+		font-size: 30px;
+		font-weight: bold;
+		letter-spacing: 10px;
+		line-height: 60px;
+		text-align: left;
+		margin: 50px 10px;
+		height: 60px;
+		padding-right: 10px;
+		padding-left: 10px;
+		width: 250px;
+	}
+}
